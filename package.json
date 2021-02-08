@@ -1,0 +1,24 @@
+{
+  "name": "upload-file-s3-bucket",
+  "version": "1.0.0",
+  "description": "upload documents or images on aws s3-bucket",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shailesh74250/upload-file-s3-bucket.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shailesh74250/upload-file-s3-bucket/issues"
+  },
+  "homepage": "https://github.com/shailesh74250/upload-file-s3-bucket#readme",
+  "dependencies": {
+    "aws-sdk": "^2.839.0"
+  }
+}

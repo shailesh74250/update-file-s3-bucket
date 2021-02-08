@@ -1,0 +1,10 @@
+ Besides these three parameters, there's a long list of other optional parameters. To get an idea of the things you can define for a file while uploading, here are a few useful ones:
+
+StorageClass: Define the class you want to store the object. S3 is intended to provide fast file serving. But in case files are not accessed frequently you can use a different storage class. For an example, if you have files which are hardly touched you can store in "S3 Glacier Storage" where the price is very low compared to "S3 Standard Storage". But it will take more time to access those files in case you need it and is covered with a different service level agreement.
+ContentType: Sets the image MIME type. The default type will be "binary/octet-stream". Adding a MIME type like "image/jpeg" will help browsers and other HTTP clients to identify the type of the file.
+ContentLength: Sets the size of the body in bytes, which comes in handy if body size cannot be determined automatically.
+ContentLanguage: Set this parameter to define which language the contents is in. This will also help HTTP clients to identify or translate the content.
+For the Bucket parameter, we'll use our bucket name, whereas for the Key parameter we'll add the file name we want to save as, and for the Body parameter, we'll use fileContent.
+
+With that done, we can upload any file by passing the file name to the function:
+
