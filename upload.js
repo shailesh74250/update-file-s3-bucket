@@ -2,8 +2,8 @@ const fs = require('fs');
 const AWS = require('aws-sdk');
 
 // Enter copied or downloaded access ID and secret key here
-const ID = 'AKIAI5NYSL7A5XRNTUFA';
-const SECRET = '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';
+const ID = '';
+const SECRET = '';
 
 // The name of the bucket that you have created
 const BUCKET_NAME = 'familysoft';
